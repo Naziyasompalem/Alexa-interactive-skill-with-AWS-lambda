@@ -1,0 +1,133 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "QuestionIntent",
+          "samples": [
+            "try quiz",
+            "start",
+            "start quiz",
+            "begin"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "response",
+              "type": "responseType"
+            }
+          ],
+          "name": "ResponseIntent",
+          "samples": [
+            "it is my solution {response}",
+            "my answer is {response}",
+            "{response}",
+            "response is {response}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "funassist",
+          "samples": [
+            "Alexa tell me a funfact",
+            "ALexa tell me a joke"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "action",
+              "type": "ActionType"
+            }
+          ],
+          "name": "GameIntent",
+          "samples": [
+            "i would like to choose {action}",
+            "my choice is {action}",
+            "choose {action}",
+            "i choose {action}",
+            "{action}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "c"
+              }
+            },
+            {
+              "name": {
+                "value": "b"
+              }
+            },
+            {
+              "name": {
+                "value": "a"
+              }
+            }
+          ],
+          "name": "responseType"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "rock"
+              }
+            },
+            {
+              "name": {
+                "value": "scissor"
+              }
+            },
+            {
+              "name": {
+                "value": "paper"
+              }
+            }
+          ],
+          "name": "ActionType"
+        }
+      ],
+      "invocationName": "interactive buddy"
+    }
+  }
+}
